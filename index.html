@@ -41,13 +41,13 @@
 
       <div id="game-panel2" class="game-panel">
         <div class="narrator-box">
-          <p class="narrator-text">As pessoas começavam a ter azar. Mistério, como você era chamado, seria o responsável por trazer o caos aos moradores de Bedubidau.<span>..</span></p>
+          <p class="narrator-text">As pessoas começavam a ter azar. Mistério, como era chamado, seria o responsável por trazer o caos aos moradores de Bedubidau.<span>..</span></p>
         </div>
         <button class="next-button">Próximo</button>
       </div>
 
       <div id="game-panel3" class="game-panel">
-        <div class="suspense-message">Mas você deixaria de existir se o azar não acontecesse mais...</div>
+        <div class="suspense-message">Mistério deixaria de existir se o azar não acontecesse mais...</div>
         <button class="next-button">Próximo</button>
       </div>
 
@@ -93,7 +93,11 @@
       <div id="game-panel7_2" class="game-panel hidden">
         <div class="narrator-box">
           <img class="narrator-image" src="imagens/misterio.gif" alt="Narrador">
-          <p class="narrator-text">A caixa de narrador para o painel 17.2</p>
+          <p class="narrator-text">Em meio a noite escura Mistério tem a ideia de  entrar no bar do Balacobaco para obter informações</p>
+          <div class="options">
+            <button class="next-button-option1" onclick="handleButtonClick(this)">Entrar no bar.</button>
+            <button class="next-button-option2" onclick="handleButtonClick(this)">Ouvir pelo lado de fora.</button>
+          </div>
         </div>
       </div>
       
@@ -159,6 +163,7 @@
       </div>
 
       <div id="game-panel14" class="game-panel">
+        <span id="message0"></span>
         <div class="narrator-box">
           <img class="narrator-image" src="imagens/eco.gif" alt="Narrador">
           <p class="narrator-text">Morcego Eco identifica a rua Coquinho o guia até lá. A rua é estreita e escura, com a vista aguçada de um gato, você busca por pistas visuais.
@@ -181,42 +186,159 @@
       </div>
 
       <div id="game-panel16_1" class="game-panel hidden">
+        <span id="message2"></span>
         <div class="narrator-box">
           <img class="narrator-image" src="imagens/misterio.gif" alt="Personagem">
           <div class="narrator-text">
-            <p>Parece que há uma janela aberta.<span>..</span></p>
-            <div class="options">
-              <button class="next-button-option1" onclick="handleButtonClick(this)">Observar movimentação.</button>
-              <button class="next-button-option2" onclick="handleButtonClick(this)">Entrar de uma vez.</button>
+            <p>Há um luz vindo daquela direção. A janela parecia estar aberta. Seria perfeito.<span>..</span></p>
             </div>
           </div>
+          <button class="next-button">Próximo</button>
         </div>
       </div>
       
-      <div id="game-panel17" class="game-panel hidden">
+      <div id="game-panel17" class="game-panel">
+        <div class="narrator-box">
+          <img class="narrator-image" src="imagens/misterio.gif" alt="Personagem">
+          <div class="narrator-text">
+            <p>Haviam duas crianças. Não pôde culpá-las por estarem acordadas, a melhor parte do dia é a noite. Parece que estão distraidos.<span>..</span></p>
+          </div>
+          <button class="next-button">Próximo</button>
+        </div>
+      </div>
+
+        <div id="game-panel18" class="game-panel">
           <div class="narrator-box">
             <img class="narrator-image" src="imagens/misterio.gif" alt="Personagem">
             <div class="narrator-text">
               <p>Parece que estão distraidos.<span>..</span></p>
               <div class="options">
-                <button class="next-button-option1" onclick="handleButtonClick(this)">Passar por baixo da cama.</button>
-                <button class="next-button-option2" onclick="handleButtonClick(this)">Correr para cima deles.</button>
+                <button class="next-button-option1" onclick="handleButtonClick(this)">Observar movimentação.</button>
+                <button class="next-button-option2" onclick="handleButtonClick(this)">Entrar de uma vez.</button>
               </div>
             </div>
           </div>
-      </div>
-      <div id="game-panel18" class="game-panel hidden">
-        <div class="narrator-box">
-          <img class="narrator-image" src="imagens/misterio.gif" alt="Personagem">
-          <div class="narrator-text">
-            <p>Parece que estão distraidos.<span>..</span></p>
-            <div class="options">
-              <button class="next-button-option1" onclick="handleButtonClick(this)">Passar por baixo da cama.</button>
-              <button class="next-button-option2" onclick="handleButtonClick(this)">Correr para cima deles.</button>
+        </div>
+
+        <div id="game-panel19_1" class="game-panel hidden">
+          <span id="message3"></span>
+
+          <div class="narrator-box">
+            <img class="narrator-image" src="imagens/misterio.gif" alt="Personagem">
+            <div class="narrator-text">
+              <p>Eles estão muito focados naquele jogo. Talvez passar embaixo dos móveis seja a melhor opção. Assim eles não me verão entrar.<span>..</span></p>
+              </div>
+            </div>
+            <button class="next-button">Próximo</button>
+          </div>
+        </div>
+
+        <div id="game-panel20" class="game-panel">
+          <div class="narrator-box">
+            <img class="narrator-image" src="imagens/misterio.gif" alt="Personagem">
+            <div class="narrator-text">
+              <p>O que devo fazer agora.<span>..</span></p>
+              <div class="options">
+                <button class="next-button-option1" onclick="handleButtonClick(this)">Passar por baixo da cama.</button>
+                <button class="next-button-option2" onclick="handleButtonClick(this)">Partir pra cima com coragem.</button>
+              </div>
             </div>
           </div>
         </div>
-    </div>
+
+        <div id="game-panel21_1" class="game-panel hidden">
+          <div class="narrator-box">
+            <img class="narrator-image" src="imagens/misterio.gif" alt="Personagem">
+            <div class="narrator-text">
+              <p>Foi fácil. Mas o que é aquilo? Parece que há um aquário perto da cozinha..<span>..</span></p>
+              </div>
+            </div>
+            <button class="next-button">Próximo</button>
+          </div>
+        </div>
+
+        <div id="game-panel22" class="game-panel">
+          <div class="narrator-box">
+            <img class="narrator-image" src="imagens/misterio.gif" alt="Personagem">
+            <div class="narrator-text">
+              <p>O que devo fazer ??..<span>..</span></p>
+              <div class="options">
+                <button class="next-button-option1" onclick="handleButtonClick(this)">Evitar obstáculo tentador.</button>
+                <button class="next-button-option2" onclick="handleButtonClick(this)">Brincar um pouco.</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div id="game-panel23_1" class="game-panel hidden">
+          <div class="narrator-box">
+            <div class="narrator-text">
+              <p>Mistério conseguiu entrar na casa. Seus instintos felinos indicam que uma sorte muito grande se concentra naquela porta.
+                Caminhou silenciosamente, como um gato, e passou pela fresta da porta sem esforço.<span>..</span></p>
+              </div>
+            </div>
+            <button class="next-button">Próximo</button>
+          </div>
+        </div>
+
+        <div id="game-panel24" class="game-panel hidden">
+          <div class="narrator-box">
+            <img class="narrator-image" src="imagens/misterio.gif" alt="Personagem">
+            <div class="narrator-text">
+              <p>Era um outro quarto. Algo brilhava em cima daquela mesa. Só poderia ser o amuleto da sorte.<span>..</span></p>
+              </div>
+            </div>
+            <button class="next-button">Próximo</button>
+          </div>
+        </div>
+
+        <div id="game-panel25" class="game-panel">
+          <div class="narrator-box">
+            <img class="narrator-image" src="imagens/misterio.gif" alt="Personagem">
+            <div class="narrator-text">
+              <p>O que devo fazer agora..<span>..</span></p>
+              <div class="options">
+                <button class="next-button-option1" onclick="handleButtonClick(this)">Pegar o amuleto.</button>
+                <button class="next-button-option2" onclick="handleButtonClick(this)">Destruir o amuleto.</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div id="game-panel26_1" class="game-panel hidden">
+          <div class="narrator-box">
+            <div class="narrator-text">
+              <p>Mistério abocanhou o amuleto da sorte e saiu daquela casa, imperceptível.<span>..</span></p>
+              </div>
+            </div>
+            <button class="next-button">Próximo</button>
+          </div>
+        </div>
+
+        <div id="game-panel27" class="game-panel">
+          <div class="narrator-box">
+            <img class="narrator-image" src="imagens/misterio.gif" alt="Personagem">
+            <div class="narrator-text">
+              <p>Mistério vai preferir voltar pelo mesmo caminho..<span>..</span></p>
+              <div class="options">
+                <button class="next-button-option1" onclick="handleButtonClick(this)">Sequência de ações predefinidas por Eco.</button>
+                <button class="next-button-option2" onclick="handleButtonClick(this)">Confiar em sua memória para reconhecer o caminho.</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div id="game-panel28_1" class="game-panel hidden">
+          <span id="message4"></span>
+          <div class="narrator-box">
+            <div class="narrator-text">
+              <p>Mistério usou sua habilidade de Decomposição e adquiriu Algoritmo.<span>..</span></p>
+              </div>
+            </div>
+            <button class="next-button">Fim</button>
+          </div>
+        </div>
+
         <div id="game-panel16_2" class="game-panel hidden">
           <div class="narrator-box">
             <p class="narrator-text">Pimpo estava sempre pelas ruas e com certeza saberia sobre a rua Coquinho, mas Mistério esqueceu-se de um detalhe: ele odeia gatos.
@@ -224,7 +346,10 @@
           </div>
           <button class="next-button">Próximo</button>
         </div>
-      </div>
+
+        
+
+    </div>
       
         
         

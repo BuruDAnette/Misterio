@@ -21,6 +21,24 @@ body {
   opacity: 0;
 }
 
+#back-button {
+  position: fixed;
+  top: 10px;
+  left: 10px;
+  padding: 10px;
+  font-size: 16px;
+  color: #ffffff;
+  background-color: #000000;
+  border: none;
+  cursor: pointer;
+  z-index: 9999;
+  font-family: "Comic Sans MS", cursive;
+}
+
+#back-button:hover {
+  background-color: #333333;
+}
+
 .game-panel {
   display: none;
   position: absolute;
@@ -438,6 +456,63 @@ button:focus {
   }
 }
 
+#message2 {
+  font-size: 2.8em; /* Tamanho da fonte */
+  color: yellow; /* Cor do texto (amarelo) */
+  animation: fadeOut 3s ease-in-out forwards; /* Animação de desaparecimento suave */
+}
+
+@keyframes fadeOut {
+  0% {
+    opacity: 1; /* Opacidade inicial (totalmente visível) */
+  }
+  100% {
+    opacity: 0; /* Opacidade final (totalmente transparente) */
+  }
+}
+#message0 {
+  font-size: 2.8em; /* Tamanho da fonte */
+  color: yellow; /* Cor do texto (amarelo) */
+  animation: fadeOut 3s ease-in-out forwards; /* Animação de desaparecimento suave */
+}
+
+@keyframes fadeOut {
+  0% {
+    opacity: 1; /* Opacidade inicial (totalmente visível) */
+  }
+  100% {
+    opacity: 0; /* Opacidade final (totalmente transparente) */
+  }
+}
+#message3 {
+  font-size: 2.8em; /* Tamanho da fonte */
+  color: yellow; /* Cor do texto (amarelo) */
+  animation: fadeOut 3s ease-in-out forwards; /* Animação de desaparecimento suave */
+}
+
+@keyframes fadeOut {
+  0% {
+    opacity: 1; /* Opacidade inicial (totalmente visível) */
+  }
+  100% {
+    opacity: 0; /* Opacidade final (totalmente transparente) */
+  }
+}
+
+#message4 {
+  font-size: 2.8em; /* Tamanho da fonte */
+  color: yellow; /* Cor do texto (amarelo) */
+  animation: fadeOut 3s ease-in-out forwards; /* Animação de desaparecimento suave */
+}
+
+@keyframes fadeOut {
+  0% {
+    opacity: 1; /* Opacidade inicial (totalmente visível) */
+  }
+  100% {
+    opacity: 0; /* Opacidade final (totalmente transparente) */
+  }
+}
 .affinity-container {
   position: fixed;
   top: 20px;
@@ -503,24 +578,90 @@ button:focus {
   margin: 0;
 }
 
+#game-panel7_2 {
+  background-image: url('imagens/background9.gif');
+}
+
 #game-panel7_2 .narrator-box {
-  background-color: #f7f7f7;
-  border: 1px solid #ccc;
-  border-radius: 5px;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
   padding: 20px;
-  margin-bottom: 20px;
+  background-color: rgba(255, 255, 255, 0.7); /* Branco */
+  color: #000000; /* Preto */
+  font-size: 20px;
+  line-height: 1.8;
+  font-family: "Comic Sans MS", cursive;
+  display: flex;
+  align-items: center;
+  padding-left: 100px; /* Ajuste o valor conforme necessário para criar espaço para a imagem */
+  flex-direction: row;
+  align-items: flex-start; /* Alinha o texto no topo */
+  padding-bottom: 50px; /* Aumenta o espaço abaixo do texto */
 }
 
 #game-panel7_2 .narrator-image {
-  float: left;
+  width: 60px;
+  height: auto;
   margin-right: 10px;
-  width: 80px;
-  height: 80px;
+  object-fit: contain;
 }
 
 #game-panel7_2 .narrator-text {
-  font-family: 'Comic Sans MS', cursive;
+  display: flex;
+  flex-direction: column;
 }
+
+#game-panel7_2 .narrator-text p {
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+
+#game-panel7_2 .options {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start; /* Ajuste para flex-start ou center */
+  margin-top: 20px; /* Espaço entre o texto e as opções */
+  flex-grow: 1; /* Adiciona crescimento flexível para ocupar todo o espaço disponível */
+  text-align: center; /* Centraliza o texto dentro das opções */
+  font-family: "Comic Sans MS", cursive;
+}
+
+#game-panel7_2 .next-button-option1 {
+  margin: 2px;
+  padding: 12px 24px;
+  font-size: 20px;
+  color: #000000; /* Preto */
+  background-color: rgba(255, 255, 255, 0.8); /* Background mais opaco */
+  border: none;
+  transition: background-color 0.5s;
+  font-family: "Comic Sans MS", cursive;
+}
+
+#game-panel7_2 .next-button-option2 {
+  margin: 2px;
+  padding: 12px 24px;
+  font-size: 20px;
+  color: #000000; /* Preto */
+  background-color: rgba(255, 255, 255, 0.8); /* Background mais opaco */
+  border: none;
+  transition: background-color 0.5s;
+  font-family: "Comic Sans MS", cursive;
+}
+
+#game-panel7_2 .next-button-option1:hover,
+#game-panel7_2 .next-button-option2:hover {
+  cursor: pointer;
+  background-color: rgba(0, 0, 0, 0.8); /* Background mais escuro ao passar o mouse */
+}
+
+#game-panel7_2 .next-button-option1:focus,
+#game-panel7_2 .next-button-option2:focus {
+  outline: none;
+}
+
 
 #game-panel8 .narrator-box {
   position: fixed;
@@ -997,10 +1138,12 @@ button:focus {
 #game-panel15 .next-button-option1:focus,
 #game-panel15 .next-button-option2:focus {
   outline: none;
+}.hide {
+  display: none;
 }
 
-#game-panel16_1 {
-  background-image: url('imagens/background14.gif');
+.show {
+  display: block;
 }
 
 #game-panel16_1 .narrator-box {
@@ -1017,82 +1160,88 @@ button:focus {
   display: flex;
   align-items: center;
   padding-left: 100px; /* Ajuste o valor conforme necessário para criar espaço para a imagem */
-  flex-direction: row;
-  align-items: flex-start; /* Alinha o texto no topo */
-  padding-bottom: 50px; /* Aumenta o espaço abaixo do texto */
 }
 
-#game-panel16_1 .narrator-image {
-  width: 60px;
-  height: auto;
-  margin-right: 10px;
-  object-fit: contain;
-}
 
 #game-panel16_1 .narrator-text {
-  display: flex;
-  flex-direction: column;
+  width: 70%; /* Ajuste a largura conforme necessário */
+  margin: 0;
 }
 
-#game-panel16_1 .narrator-text p {
-  margin-top: 0;
-  margin-bottom: 10px;
-}
-
-#game-panel16_1 .options {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center; /* Centraliza horizontalmente as opções */
-  margin-top: 20px; /* Espaço entre o texto e as opções */
-  flex-grow: 1; /* Adiciona crescimento flexível para ocupar todo o espaço disponível */
-  text-align: center; /* Centraliza o texto dentro das opções */
-  font-family: "Comic Sans MS", cursive;
-
-}
-
-#game-panel16_1 .next-button-option1 {
-  margin: 2px;
+#game-panel16_1 .next-button {
+  position: fixed;
+  bottom: 10px;
+  right: 20px;
   padding: 12px 24px;
   font-size: 20px;
-  color: #000000; /* Preto */
-  background-color: rgba(255, 255, 255, 0.8); /* Background mais opaco */
+  font-family: 'Press Start 2P', cursive;
+  color: #00000; /* Branco */
+  background-color: transparent;
   border: none;
   transition: background-color 0.5s;
-  font-family: "Comic Sans MS", cursive;
-  margin-right: auto; /* Centraliza a opção 2 */
 }
 
-#game-panel16_1 .next-button-option2 {
-  margin: 2px;
-  padding: 12px 24px;
-  font-size: 20px;
-  color: #000000; /* Preto */
-  background-color: rgba(255, 255, 255, 0.8); /* Background mais opaco */
-  border: none;
-  transition: background-color 0.5s;
-  font-family: "Comic Sans MS", cursive;
-  margin-right: auto; /* Centraliza a opção 2 */
-
-}
-
-#game-panel16_1 .next-button-option1:hover,
-#game-panel16_1 .next-button-option2:hover {
+#game-panel16_1 .next-button:hover {
   cursor: pointer;
-  background-color: rgba(0, 0, 0, 0.8); /* Background mais escuro ao passar o mouse */
 }
 
-#game-panel16_1 .next-button-option1:focus,
-#game-panel16_1 .next-button-option2:focus {
+#game-panel16_1 .next-button:focus {
   outline: none;
 }
 
+#game-panel16_1 {
+  background-image: url('imagens/background14.gif');
+}
+#game-panel17 .narrator-box {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 20px;
+  background-color: rgba(255, 255, 255, 0.7); /* Branco */
+  color: #000000; /* Preto */
+  font-size: 20px;
+  line-height: 1.8;
+  font-family: "Comic Sans MS", cursive;
+  display: flex;
+  align-items: center;
+  padding-left: 100px; /* Ajuste o valor conforme necessário para criar espaço para a imagem */
+}
+
+
+#game-panel17 .narrator-text {
+  width: 70%; /* Ajuste a largura conforme necessário */
+  margin: 0;
+}
+
+#game-panel17 .next-button {
+  position: fixed;
+  bottom: 10px;
+  right: 20px;
+  padding: 12px 24px;
+  font-size: 20px;
+  font-family: 'Press Start 2P', cursive;
+  color: #00000; /* Branco */
+  background-color: transparent;
+  border: none;
+  transition: background-color 0.5s;
+}
+
+#game-panel17 .next-button:hover {
+  cursor: pointer;
+}
+
+#game-panel17 .next-button:focus {
+  outline: none;
+}
 
 #game-panel17 {
   background-image: url('imagens/background15.gif');
 }
 
-#game-panel17 .narrator-box {
+
+
+#game-panel18 .narrator-box {
   position: fixed;
   bottom: 0;
   left: 0;
@@ -1111,24 +1260,24 @@ button:focus {
   padding-bottom: 50px; /* Aumenta o espaço abaixo do texto */
 }
 
-#game-panel17 .narrator-image {
+#game-panel18 .narrator-image {
   width: 60px;
   height: auto;
   margin-right: 10px;
   object-fit: contain;
 }
 
-#game-panel17 .narrator-text {
+#game-panel18 .narrator-text {
   display: flex;
   flex-direction: column;
 }
 
-#game-panel17 .narrator-text p {
+#game-panel18 .narrator-text p {
   margin-top: 0;
   margin-bottom: 10px;
 }
 
-#game-panel17 .options {
+#game-panel18 .options {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -1140,7 +1289,7 @@ button:focus {
 
 }
 
-#game-panel17 .next-button-option1 {
+#game-panel18 .next-button-option1 {
   margin: 2px;
   padding: 12px 24px;
   font-size: 20px;
@@ -1152,7 +1301,7 @@ button:focus {
   margin-right: auto; /* Centraliza a opção 2 */
 }
 
-#game-panel17 .next-button-option2 {
+#game-panel18 .next-button-option2 {
   margin: 2px;
   padding: 12px 24px;
   font-size: 20px;
@@ -1165,16 +1314,640 @@ button:focus {
 
 }
 
-#game-panel17 .next-button-option1:hover,
-#game-panel17 .next-button-option2:hover {
+#game-panel18 .next-button-option1:hover,
+#game-panel18 .next-button-option2:hover {
   cursor: pointer;
   background-color: rgba(0, 0, 0, 0.8); /* Background mais escuro ao passar o mouse */
 }
 
-#game-panel17 .next-button-option1:focus,
-#game-panel17 .next-button-option2:focus {
+#game-panel18 .next-button-option1:focus,
+#game-panel18 .next-button-option2:focus {
+  outline: none;
+}#game-panel18 {
+  background-image: url('imagens/background14.gif');
+}
+#game-panel19_1 .narrator-box {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 20px;
+  background-color: rgba(255, 255, 255, 0.7); /* Branco */
+  color: #000000; /* Preto */
+  font-size: 20px;
+  line-height: 1.8;
+  font-family: "Comic Sans MS", cursive;
+  display: flex;
+  align-items: center;
+  padding-left: 100px; /* Ajuste o valor conforme necessário para criar espaço para a imagem */
+}
+
+
+#game-panel19_1 .narrator-text {
+  width: 70%; /* Ajuste a largura conforme necessário */
+  margin: 0;
+}
+
+#game-panel19_1 .next-button {
+  position: fixed;
+  bottom: 10px;
+  right: 20px;
+  padding: 12px 24px;
+  font-size: 20px;
+  font-family: 'Press Start 2P', cursive;
+  color: #00000; /* Branco */
+  background-color: transparent;
+  border: none;
+  transition: background-color 0.5s;
+}
+
+#game-panel19_1 .next-button:hover {
+  cursor: pointer;
+}
+
+#game-panel19_1 .next-button:focus {
   outline: none;
 }
+
+#game-panel19_1 {
+  background-image: url('imagens/background15.gif');
+}
+
+#game-panel20 .narrator-box {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 20px;
+  background-color: rgba(255, 255, 255, 0.7); /* Branco */
+  color: #000000; /* Preto */
+  font-size: 20px;
+  line-height: 1.8;
+  font-family: "Comic Sans MS", cursive;
+  display: flex;
+  align-items: center;
+  padding-left: 100px; /* Ajuste o valor conforme necessário para criar espaço para a imagem */
+  flex-direction: row;
+  align-items: flex-start; /* Alinha o texto no topo */
+  padding-bottom: 50px; /* Aumenta o espaço abaixo do texto */
+}
+
+#game-panel20 .narrator-image {
+  width: 60px;
+  height: auto;
+  margin-right: 10px;
+  object-fit: contain;
+}
+
+#game-panel20 .narrator-text {
+  display: flex;
+  flex-direction: column;
+}
+
+#game-panel20 .narrator-text p {
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+
+#game-panel20 .options {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; /* Centraliza horizontalmente as opções */
+  margin-top: 20px; /* Espaço entre o texto e as opções */
+  flex-grow: 1; /* Adiciona crescimento flexível para ocupar todo o espaço disponível */
+  text-align: center; /* Centraliza o texto dentro das opções */
+  font-family: "Comic Sans MS", cursive;
+
+}
+
+#game-panel20 .next-button-option1 {
+  margin: 2px;
+  padding: 12px 24px;
+  font-size: 20px;
+  color: #000000; /* Preto */
+  background-color: rgba(255, 255, 255, 0.8); /* Background mais opaco */
+  border: none;
+  transition: background-color 0.5s;
+  font-family: "Comic Sans MS", cursive;
+  margin-right: auto; /* Centraliza a opção 2 */
+}
+
+#game-panel20 .next-button-option2 {
+  margin: 2px;
+  padding: 12px 24px;
+  font-size: 20px;
+  color: #000000; /* Preto */
+  background-color: rgba(255, 255, 255, 0.8); /* Background mais opaco */
+  border: none;
+  transition: background-color 0.5s;
+  font-family: "Comic Sans MS", cursive;
+  margin-right: auto; /* Centraliza a opção 2 */
+
+}
+
+#game-panel20 .next-button-option1:hover,
+#game-panel20 .next-button-option2:hover {
+  cursor: pointer;
+  background-color: rgba(0, 0, 0, 0.8); /* Background mais escuro ao passar o mouse */
+}
+
+#game-panel20 .next-button-option1:focus,
+#game-panel20 .next-button-option2:focus {
+  outline: none;
+}#game-panel20 {
+  background-image: url('imagens/background15.gif');
+}
+#game-panel21_1 .narrator-box {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 20px;
+  background-color: rgba(255, 255, 255, 0.7); /* Branco */
+  color: #000000; /* Preto */
+  font-size: 20px;
+  line-height: 1.8;
+  font-family: "Comic Sans MS", cursive;
+  display: flex;
+  align-items: center;
+  padding-left: 100px; /* Ajuste o valor conforme necessário para criar espaço para a imagem */
+}
+
+
+#game-panel21_1 .narrator-text {
+  width: 70%; /* Ajuste a largura conforme necessário */
+  margin: 0;
+}
+
+#game-panel21_1 .next-button {
+  position: fixed;
+  bottom: 10px;
+  right: 20px;
+  padding: 12px 24px;
+  font-size: 20px;
+  font-family: 'Press Start 2P', cursive;
+  color: #00000; /* Branco */
+  background-color: transparent;
+  border: none;
+  transition: background-color 0.5s;
+}
+
+#game-panel21_1 .next-button:hover {
+  cursor: pointer;
+}
+
+#game-panel21_1 .next-button:focus {
+  outline: none;
+}
+
+#game-panel21_1 {
+  background-image: url('imagens/background16.gif');
+}
+#game-panel22 .narrator-box {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 20px;
+  background-color: rgba(255, 255, 255, 0.7); /* Branco */
+  color: #000000; /* Preto */
+  font-size: 20px;
+  line-height: 1.8;
+  font-family: "Comic Sans MS", cursive;
+  display: flex;
+  align-items: center;
+  padding-left: 100px; /* Ajuste o valor conforme necessário para criar espaço para a imagem */
+  flex-direction: row;
+  align-items: flex-start; /* Alinha o texto no topo */
+  padding-bottom: 50px; /* Aumenta o espaço abaixo do texto */
+}
+
+#game-panel22 .narrator-image {
+  width: 60px;
+  height: auto;
+  margin-right: 10px;
+  object-fit: contain;
+}
+
+#game-panel22 .narrator-text {
+  display: flex;
+  flex-direction: column;
+}
+
+#game-panel22 .narrator-text p {
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+
+#game-panel22 .options {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; /* Centraliza horizontalmente as opções */
+  margin-top: 20px; /* Espaço entre o texto e as opções */
+  flex-grow: 1; /* Adiciona crescimento flexível para ocupar todo o espaço disponível */
+  text-align: center; /* Centraliza o texto dentro das opções */
+  font-family: "Comic Sans MS", cursive;
+
+}
+
+#game-panel22 .next-button-option1 {
+  margin: 2px;
+  padding: 12px 24px;
+  font-size: 20px;
+  color: #000000; /* Preto */
+  background-color: rgba(255, 255, 255, 0.8); /* Background mais opaco */
+  border: none;
+  transition: background-color 0.5s;
+  font-family: "Comic Sans MS", cursive;
+  margin-right: auto; /* Centraliza a opção 2 */
+}
+
+#game-panel22 .next-button-option2 {
+  margin: 2px;
+  padding: 12px 24px;
+  font-size: 20px;
+  color: #000000; /* Preto */
+  background-color: rgba(255, 255, 255, 0.8); /* Background mais opaco */
+  border: none;
+  transition: background-color 0.5s;
+  font-family: "Comic Sans MS", cursive;
+  margin-right: auto; /* Centraliza a opção 2 */
+
+}
+
+#game-panel22 .next-button-option1:hover,
+#game-panel22 .next-button-option2:hover {
+  cursor: pointer;
+  background-color: rgba(0, 0, 0, 0.8); /* Background mais escuro ao passar o mouse */
+}
+
+#game-panel22 .next-button-option1:focus,
+#game-panel22 .next-button-option2:focus {
+  outline: none;
+}#game-panel22 {
+  background-image: url('imagens/background16.gif');
+}
+
+#game-panel23_1 .narrator-box {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 20px;
+  background-color: rgba(255, 255, 255, 0.7); /* Branco */
+  color: #000000; /* Preto */
+  font-size: 20px;
+  line-height: 1.8;
+  font-family: "Comic Sans MS", cursive;
+  display: flex;
+  align-items: center;
+  padding-left: 100px; /* Ajuste o valor conforme necessário para criar espaço para a imagem */
+}
+
+
+#game-panel23_1 .narrator-text {
+  width: 70%; /* Ajuste a largura conforme necessário */
+  margin: 0;
+}
+
+#game-panel23_1 .next-button {
+  position: fixed;
+  bottom: 10px;
+  right: 20px;
+  padding: 12px 24px;
+  font-size: 20px;
+  font-family: 'Press Start 2P', cursive;
+  color: #00000; /* Branco */
+  background-color: transparent;
+  border: none;
+  transition: background-color 0.5s;
+}
+
+#game-panel23_1 .next-button:hover {
+  cursor: pointer;
+}
+
+#game-panel23_1 .next-button:focus {
+  outline: none;
+}
+
+#game-panel23_1 {
+  background-image: url('imagens/background16.gif');
+}
+#game-panel24 .narrator-box {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 20px;
+  background-color: rgba(255, 255, 255, 0.7); /* Branco */
+  color: #000000; /* Preto */
+  font-size: 20px;
+  line-height: 1.8;
+  font-family: "Comic Sans MS", cursive;
+  display: flex;
+  align-items: center;
+  padding-left: 100px; /* Ajuste o valor conforme necessário para criar espaço para a imagem */
+}
+
+
+#game-panel24 .narrator-text {
+  width: 70%; /* Ajuste a largura conforme necessário */
+  margin: 0;
+}
+
+#game-panel24 .next-button {
+  position: fixed;
+  bottom: 10px;
+  right: 20px;
+  padding: 12px 24px;
+  font-size: 20px;
+  font-family: 'Press Start 2P', cursive;
+  color: #00000; /* Branco */
+  background-color: transparent;
+  border: none;
+  transition: background-color 0.5s;
+}
+
+#game-panel24 .next-button:hover {
+  cursor: pointer;
+}
+
+#game-panel24 .next-button:focus {
+  outline: none;
+}
+
+#game-panel24 {
+  background-image: url('imagens/background17.jpg');
+}
+
+#game-panel25 .narrator-box {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 20px;
+  background-color: rgba(255, 255, 255, 0.7); /* Branco */
+  color: #000000; /* Preto */
+  font-size: 20px;
+  line-height: 1.8;
+  font-family: "Comic Sans MS", cursive;
+  display: flex;
+  align-items: center;
+  padding-left: 100px; /* Ajuste o valor conforme necessário para criar espaço para a imagem */
+  flex-direction: row;
+  align-items: flex-start; /* Alinha o texto no topo */
+  padding-bottom: 50px; /* Aumenta o espaço abaixo do texto */
+}
+
+#game-panel25 .narrator-image {
+  width: 60px;
+  height: auto;
+  margin-right: 10px;
+  object-fit: contain;
+}
+
+#game-panel25 .narrator-text {
+  display: flex;
+  flex-direction: column;
+}
+
+#game-panel25 .narrator-text p {
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+
+#game-panel25 .options {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; /* Centraliza horizontalmente as opções */
+  margin-top: 20px; /* Espaço entre o texto e as opções */
+  flex-grow: 1; /* Adiciona crescimento flexível para ocupar todo o espaço disponível */
+  text-align: center; /* Centraliza o texto dentro das opções */
+  font-family: "Comic Sans MS", cursive;
+
+}
+
+#game-panel25 .next-button-option1 {
+  margin: 2px;
+  padding: 12px 24px;
+  font-size: 20px;
+  color: #000000; /* Preto */
+  background-color: rgba(255, 255, 255, 0.8); /* Background mais opaco */
+  border: none;
+  transition: background-color 0.5s;
+  font-family: "Comic Sans MS", cursive;
+  margin-right: auto; /* Centraliza a opção 2 */
+}
+
+#game-panel25 .next-button-option2 {
+  margin: 2px;
+  padding: 12px 24px;
+  font-size: 20px;
+  color: #000000; /* Preto */
+  background-color: rgba(255, 255, 255, 0.8); /* Background mais opaco */
+  border: none;
+  transition: background-color 0.5s;
+  font-family: "Comic Sans MS", cursive;
+  margin-right: auto; /* Centraliza a opção 2 */
+
+}
+
+#game-panel25 .next-button-option1:hover,
+#game-panel25 .next-button-option2:hover {
+  cursor: pointer;
+  background-color: rgba(0, 0, 0, 0.8); /* Background mais escuro ao passar o mouse */
+}
+
+#game-panel25 .next-button-option1:focus,
+#game-panel25 .next-button-option2:focus {
+  outline: none;
+}#game-panel25 {
+  background-image: url('imagens/background17.jpg');
+}
+#game-panel26_1 .narrator-box {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 20px;
+  background-color: rgba(255, 255, 255, 0.7); /* Branco */
+  color: #000000; /* Preto */
+  font-size: 20px;
+  line-height: 1.8;
+  font-family: "Comic Sans MS", cursive;
+  display: flex;
+  align-items: center;
+  padding-left: 100px; /* Ajuste o valor conforme necessário para criar espaço para a imagem */
+}
+
+
+#game-panel26_1 .narrator-text {
+  width: 70%; /* Ajuste a largura conforme necessário */
+  margin: 0;
+}
+
+#game-panel26_1 .next-button {
+  position: fixed;
+  bottom: 10px;
+  right: 20px;
+  padding: 12px 24px;
+  font-size: 20px;
+  font-family: 'Press Start 2P', cursive;
+  color: #00000; /* Branco */
+  background-color: transparent;
+  border: none;
+  transition: background-color 0.5s;
+}
+
+#game-panel26_1 .next-button:hover {
+  cursor: pointer;
+}
+
+#game-panel26_1 .next-button:focus {
+  outline: none;
+}
+
+#game-panel26_1 {
+  background-image: url('imagens/background7.gif');
+}
+
+#game-panel27 .narrator-box {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 20px;
+  background-color: rgba(255, 255, 255, 0.7); /* Branco */
+  color: #000000; /* Preto */
+  font-size: 20px;
+  line-height: 1.8;
+  font-family: "Comic Sans MS", cursive;
+  display: flex;
+  align-items: center;
+  padding-left: 100px; /* Ajuste o valor conforme necessário para criar espaço para a imagem */
+  flex-direction: row;
+  align-items: flex-start; /* Alinha o texto no topo */
+  padding-bottom: 50px; /* Aumenta o espaço abaixo do texto */
+}
+
+#game-panel27 .narrator-image {
+  width: 60px;
+  height: auto;
+  margin-right: 10px;
+  object-fit: contain;
+}
+
+#game-panel27 .narrator-text {
+  display: flex;
+  flex-direction: column;
+}
+
+#game-panel27 .narrator-text p {
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+
+#game-panel27 .options {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; /* Centraliza horizontalmente as opções */
+  margin-top: 20px; /* Espaço entre o texto e as opções */
+  flex-grow: 1; /* Adiciona crescimento flexível para ocupar todo o espaço disponível */
+  text-align: center; /* Centraliza o texto dentro das opções */
+  font-family: "Comic Sans MS", cursive;
+
+}
+
+#game-panel27 .next-button-option1 {
+  margin: 2px;
+  padding: 12px 24px;
+  font-size: 20px;
+  color: #000000; /* Preto */
+  background-color: rgba(255, 255, 255, 0.8); /* Background mais opaco */
+  border: none;
+  transition: background-color 0.5s;
+  font-family: "Comic Sans MS", cursive;
+  margin-right: auto; /* Centraliza a opção 2 */
+}
+
+#game-panel27 .next-button-option2 {
+  margin: 2px;
+  padding: 12px 24px;
+  font-size: 20px;
+  color: #000000; /* Preto */
+  background-color: rgba(255, 255, 255, 0.8); /* Background mais opaco */
+  border: none;
+  transition: background-color 0.5s;
+  font-family: "Comic Sans MS", cursive;
+  margin-right: auto; /* Centraliza a opção 2 */
+
+}
+
+#game-panel27 .next-button-option1:hover,
+#game-panel27 .next-button-option2:hover {
+  cursor: pointer;
+  background-color: rgba(0, 0, 0, 0.8); /* Background mais escuro ao passar o mouse */
+}
+
+#game-panel27 .next-button-option1:focus,
+#game-panel27 .next-button-option2:focus {
+  outline: none;
+}#game-panel27 {
+  background-image: url('imagens/background7.gif');
+}
+
+#game-panel28_1 .narrator-box {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 20px;
+  background-color: rgba(255, 255, 255, 0.7); /* Branco */
+  color: #000000; /* Preto */
+  font-size: 20px;
+  line-height: 1.8;
+  font-family: "Comic Sans MS", cursive;
+  display: flex;
+  align-items: center;
+  padding-left: 100px; /* Ajuste o valor conforme necessário para criar espaço para a imagem */
+}
+
+
+#game-panel28_1 .narrator-text {
+  width: 70%; /* Ajuste a largura conforme necessário */
+  margin: 0;
+}
+
+#game-panel28_1 .next-button {
+  position: fixed;
+  bottom: 10px;
+  right: 20px;
+  padding: 12px 24px;
+  font-size: 20px;
+  font-family: 'Press Start 2P', cursive;
+  color: #00000; /* Branco */
+  background-color: transparent;
+  border: none;
+  transition: background-color 0.5s;
+}
+
+#game-panel28_1 .next-button:hover {
+  cursor: pointer;
+}
+
+#game-panel28_1 .next-button:focus {
+  outline: none;
+}
+
+#game-panel28_1 {
+  background-image: url('imagens/background7.gif');
+}
+
 .hide {
   display: none;
 }
