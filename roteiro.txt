@@ -1,0 +1,57 @@
+DECOMPOSIÇÃO   /   RECONHECIMENTO DE PADRÕES   /   ABSTRAÇÃO   /   ALGORITMO
+
+Na pequena cidade de Bedubidau, existia um gato preto amaldiçoado...
+Por onde ele passava, coisas estranhas aconteciam e as pessoas começavam a ter azar. Mistério, como era chamado, seria o responsável por trazer o caos aos moradores de Bedubidau 
+Mas ele deixaria de existir se o azar não acontecesse mais...
+
+O que tanto temia chegou. Enquanto caminhava pelas ruas da cidade, ele ouviu um grupo de pessoas conversando sobre uma misteriosa onda de sorte que havia surgido na cidade. 
+Eles diziam que um possível amuleto da sorte mais forte que qualquer azar tenha sido perdido pela cidade. E que alguém havia encontrado.
+
+Mistério ficou intrigado por existir uma sorte maior que o seu azar e decidiu investigar mais:
+Opção 1: Mistério decide seguir o grupo de pessoas para descobrir mais sobre o amuleto da sorte.
+    "Dizem que é o novo morador da rua Coquinho. quem sabe ele não esteja vendendo?" --> nova pista + aumenta azar (ABSTRAÇÃO)
+    Mistério precisa descobrir onde fica a rua Coquinho. Mas persebeu que o assunto já havia acabado entre aquele traseuntes. então só lhe resta procurar sozinho.
+    Não sabia muito sobre os lugares da cidade. Mas conhecia um amigo noturnos conhecidos pela ótima capacidade de localização e com os sentidos aguçados.
+        Mistério decide procurar o:
+            Opção 1: Morcego Eco:
+                "Então você precisa saber sobre a rua Coquinho. Siga-me" --> nova pista + aumenta azar (RECONHECIMENTO DE PADRÕES)
+                    Mistério seguia Eco pelas ruas. Através de sua ecolocalização, Eco conseguiu receber os padrões sonoros. 
+                    "Rua Coquinho tem um grande relógio. Então preciso seguir os estalos constantes de seus grandes ponteiros."
+                    Morcego Eco identifica a rua Coquinho e guia Mistério até lá. A rua é estreita e escura, com a vista aguçada de um gato, Mistério busca por pistas visuais.
+                    Foi então que arrepiou. Uma casa havia em sua fachada um trevo de quatro folhas. Só poderia ser ali. Precisaria entrar sileciosamente:
+                        Opção 1: Observar pontos de acesso --> nova pista + aumenta azar (DECOMPOSIÇÃO)
+                            Parece que há uma janela aberta:
+                                Opção 1: Observar movimentação --- > aumentar azar (DECOMPOSIÇÃO)
+                                    Parece que alguém está dormindo:
+                                        Opção 1: Passar por baixo da cama ----> aumenta azar (DECOMPOSIÇÃO)
+                                            Parece que há um aquário perto da porta:
+                                                Opção 1: Evitar obstáculo tentador
+                                                    Mistério conseguiu entrar na casa. Seus instintos felinos indicam que uma sorte muito grande se concentra naquela porta.
+                                                    Caminhou silenciosamente, como um gato, e passou pela fresta da porta sem precisar abri-la mais.
+                                                    Algo brilhava em cima daquela mesa. Só poderia ser o amuleto da sorte:
+                                                        Opção 1: Pegar o amuleto 
+                                                            Mistério abocanhou o amuleto da sorte e saiu daquela casa, imperceptível. ---> diminui azar (ALGORITMO)
+                                                            (Algoritmo: Se Mistério decide voltar pelo mesmo caminho que veio seguindo uma sequência de ações predefinidas, planejadas 
+                                                            com antecedência, então isso pode ser considerado um algoritmo simplificado. Ele estabelece uma série de passos a seguir 
+                                                            para retornar ao ponto inicial.)
+                                                                Ao sair da janela, com o amuleto na boca ele tentou seguir o caminho de Eco:
+                                                                Opção 1: usar habilidade de Decomposição para planejar a rota --> diminui azar
+
+                                                                Opção 1: usar habilidade de Reconhecimento de padrões para reconhecer a rota --> aumenta azar
+                                                        Opção 2: Destruir o amuleto --> diminui azar
+                                                            Bravo pela ideia de ter uma sorte maior que seu azar existindo no mundo. pegou o amuleto e jogou de cima da prateleira, mas ele 
+                                                            não se quebrou.
+                                                            O barulho causado parecia ter acordado alguém da casa. Uma gata cor de neve aproximou-se rapidamente do lugar...
+                                                            O que pensa estar fazendo aqui?
+                                                            Preciso destruir essa sorte, antes que ela me destrua.
+
+
+                                        
+            Opção 2: Labrador Pimpo:
+                Pimpo estava sempre pelas ruas e com certeza saberia sobre a rua Coquinho, mas Mistério esqueceu-se de um detalhe: ele odeia gatos.
+                Pimpo latia como louco e Mitério teve que fugir, estava fraco e com medo. teria que procurar pistas em outro lugar.
+            
+Opção 2: Mistério decide procurar por conta própria.
+
+
+

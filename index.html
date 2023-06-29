@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8">
+    <title>Mistério</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Comic+Sans+MS&display=swap" rel="stylesheet">
+    <header>
+      <div class="authors">
+        <span>Arthur Baltar</span><br>
+        <span>Bruna Castro</span><br>
+        <span>Emanuel Golçalves</span><br>
+        <span>Lizandra Abelha</span><br>
+        <span>Mariana Dias</span>
+      </div>
+      
+    </header>
+    
+  </head>
+
+  <body>
+    <div class="container">
+      <script src="script.js"></script>
+
+      <div id="intro-panel" class="intro-panel">
+        <h1 class="title">MISTÉRIO</h1>
+        <button id="start-button">Começar</button>
+      </div>
+
+      
+      
+      <div id="game-panels" >
+        <div id="game-panel" class="game-panel">
+        <div class="narrator-box">
+          <img class="narrator-image" src="imagens/misterio.gif" alt="Personagem">
+          <p class="narrator-text">Na pequena cidade de Bedubidau, existia um gato preto amaldiçoado. Por onde ele passava, coisas estranhas aconteciam.<span>..</span></p>
+        </div>
+        <button class="next-button">Próximo</button>
+      </div>
+
+      <div id="game-panel2" class="game-panel">
+        <div class="narrator-box">
+          <p class="narrator-text">As pessoas começavam a ter azar. Mistério, como você era chamado, seria o responsável por trazer o caos aos moradores de Bedubidau.<span>..</span></p>
+        </div>
+        <button class="next-button">Próximo</button>
+      </div>
+
+      <div id="game-panel3" class="game-panel">
+        <div class="suspense-message">Mas você deixaria de existir se o azar não acontecesse mais...</div>
+        <button class="next-button">Próximo</button>
+      </div>
+
+      <div id="game-panel4" class="game-panel">
+        <div class="narrator-box">
+          <img class="narrator-image" src="imagens/misterio.gif" alt="Personagem">
+          <p class="narrator-text">E o que tanto temia chegava. Enquanto caminhava pelas ruas da cidade, você ouviu um grupo de pessoas conversando sobre uma misteriosa onda de sorte que havia surgido em Bedubedau..<span>..</span></p>
+        </div>
+        <button class="next-button">Próximo</button>
+      </div>
+    
+      <div id="game-panel5" class="game-panel">
+        <div class="narrator-box">
+          <p class="narrator-text">Eles diziam que um possível amuleto da sorte mais forte que qualquer azar tenha sido perdido pela cidade. E que alguém havia encontrado.<span>..</span></p>
+        </div>
+        <button class="next-button">Próximo</button>
+      </div>
+
+      
+      <div id="game-panel6" class="game-panel">
+        
+        <div class="narrator-box">
+          <img class="narrator-image" src="imagens/misterio.gif" alt="Personagem">
+          <div class="narrator-text">
+            <p>Mistério ficou intrigado por existir uma sorte maior que o seu azar e decidiu investigar mais. Escolha seu caminho.<span>..</span></p>
+            <div class="options">
+              <button class="next-button-option1" onclick="handleButtonClick(this)">Mistério decide seguir o grupo de pessoas para descobrir mais sobre o amuleto da sorte.</button>
+              <button class="next-button-option2" onclick="handleButtonClick(this)">Mistério decide procurar por conta própria.</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <div id="game-panel7_1" class="game-panel hidden">
+      <span id="message"></span>
+      <div class="narrator-box">
+        <img class="narrator-image" src="imagens/misterio.gif" alt="Narrador">
+        <p class="narrator-text">"Dizem que é o novo morador da rua Coquinho. quem sabe ele não esteja vendendo?"<span>..</span></p>
+      </div>
+        <button class="next-button">Próximo</button>
+      </div>
+    
+      <div id="game-panel7_2" class="game-panel hidden">
+        <div class="narrator-box">
+          <img class="narrator-image" src="imagens/misterio.gif" alt="Narrador">
+          <p class="narrator-text">A caixa de narrador para o painel 17.2</p>
+        </div>
+      </div>
+      
+      <div id="game-panel8" class="game-panel">
+        <div class="narrator-box">
+          <p class="narrator-text">Você precisa descobrir onde fica a rua Coquinho. Mas percebeu que se perdeu daquelas pessoas.<span>..</span></p>
+        </div>
+        <button class="next-button">Próximo</button>
+      </div>
+
+      <div id="game-panel9" class="game-panel">
+        <div class="narrator-box">
+          <p class="narrator-text">Não sabia muito sobre os lugares da cidade. Mas conhecia um amigo noturno conhecido pela ótima capacidade de localização e com os sentidos aguçados.<span>..</span></p>
+        </div>
+        <button class="next-button">Próximo</button>
+      </div>
+
+      <div id="game-panel10" class="game-panel">
+        <div class="narrator-box">
+          <img class="narrator-image" src="imagens/misterio.gif" alt="Personagem">
+          <div class="narrator-text">
+            <p>Você decide procurar esse amigo. Escolha seu caminho.<span>..</span></p>
+            <div class="options">
+              <button class="next-button-option1" onclick="handleButtonClick(this)">Morcego Eco.</button>
+              <button class="next-button-option2" onclick="handleButtonClick(this)">Labrador Pimpo.</button>
+              
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div id="game-panel11_1" class="game-panel hidden">
+        <span id="message1"></span>
+        <div class="narrator-box">
+          <img class="narrator-image" src="imagens/eco.gif" alt="Narrador">
+          <p class="narrator-text">"Então você precisa saber sobre a rua Coquinho. Siga-me"<span>..</span></p>
+        </div>
+          <button class="next-button">Próximo</button>
+      </div>
+      
+        <div id="game-panel11_2" class="game-panel hidden">
+          <div class="narrator-box">
+            <p class="narrator-text">Pimpo estava sempre pelas ruas e com certeza saberia sobre a rua Coquinho, mas Mistério esqueceu-se de um detalhe: ele odeia gatos.
+              Pimpo latia como louco e Mitério teve que fugir, estava fraco e com medo. teria que procurar pistas em outro lugar.<span>..</span></p>
+          </div>
+          <button class="next-button">Próximo</button>
+        </div>
+
+      <div id="game-panel12" class="game-panel">
+        <div class="narrator-box">
+          <img class="narrator-image" src="imagens/misterio.gif" alt="Narrador">
+          <p class="narrator-text">Você seguia Eco pelas ruas. Através de sua ecolocalização, Eco conseguiu receber os padrões sonoros. <span>..</span></p>
+        </div>
+        <button class="next-button">Próximo</button>
+      </div>
+
+      <div id="game-panel13" class="game-panel">
+        <div class="narrator-box">
+          <img class="narrator-image" src="imagens/eco.gif" alt="Narrador">
+          <p class="narrator-text">"Rua Coquinho tem um grande relógio. Então preciso seguir os estalos constantes de seus grandes ponteiros." <span>..</span></p>
+        </div>
+        <button class="next-button">Próximo</button>
+      </div>
+
+      <div id="game-panel14" class="game-panel">
+        <div class="narrator-box">
+          <img class="narrator-image" src="imagens/eco.gif" alt="Narrador">
+          <p class="narrator-text">Morcego Eco identifica a rua Coquinho o guia até lá. A rua é estreita e escura, com a vista aguçada de um gato, você busca por pistas visuais.
+            <span>..</span></p>
+        </div>
+        <button class="next-button">Próximo</button>
+      </div>
+
+      <div id="game-panel15" class="game-panel">
+        <div class="narrator-box">
+          <img class="narrator-image" src="imagens/misterio.gif" alt="Personagem">
+          <div class="narrator-text">
+            <p>Foi então que arrepiou. Uma casa havia em sua fachada um trevo de quatro folhas. Só poderia ser ali. Precisaria entrar sileciosamente.<span>..</span></p>
+            <div class="options">
+              <button class="next-button-option1" onclick="handleButtonClick(this)">Observar pontos de acesso.</button>
+              <button class="next-button-option2" onclick="handleButtonClick(this)">É muito assustador. Quero voltar.</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div id="game-panel16_1" class="game-panel hidden">
+        <div class="narrator-box">
+          <img class="narrator-image" src="imagens/misterio.gif" alt="Personagem">
+          <div class="narrator-text">
+            <p>Parece que há uma janela aberta.<span>..</span></p>
+            <div class="options">
+              <button class="next-button-option1" onclick="handleButtonClick(this)">Observar movimentação.</button>
+              <button class="next-button-option2" onclick="handleButtonClick(this)">Entrar de uma vez.</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <div id="game-panel17" class="game-panel hidden">
+          <div class="narrator-box">
+            <img class="narrator-image" src="imagens/misterio.gif" alt="Personagem">
+            <div class="narrator-text">
+              <p>Parece que estão distraidos.<span>..</span></p>
+              <div class="options">
+                <button class="next-button-option1" onclick="handleButtonClick(this)">Passar por baixo da cama.</button>
+                <button class="next-button-option2" onclick="handleButtonClick(this)">Correr para cima deles.</button>
+              </div>
+            </div>
+          </div>
+      </div>
+      <div id="game-panel18" class="game-panel hidden">
+        <div class="narrator-box">
+          <img class="narrator-image" src="imagens/misterio.gif" alt="Personagem">
+          <div class="narrator-text">
+            <p>Parece que estão distraidos.<span>..</span></p>
+            <div class="options">
+              <button class="next-button-option1" onclick="handleButtonClick(this)">Passar por baixo da cama.</button>
+              <button class="next-button-option2" onclick="handleButtonClick(this)">Correr para cima deles.</button>
+            </div>
+          </div>
+        </div>
+    </div>
+        <div id="game-panel16_2" class="game-panel hidden">
+          <div class="narrator-box">
+            <p class="narrator-text">Pimpo estava sempre pelas ruas e com certeza saberia sobre a rua Coquinho, mas Mistério esqueceu-se de um detalhe: ele odeia gatos.
+              Pimpo latia como louco e Mitério teve que fugir, estava fraco e com medo. teria que procurar pistas em outro lugar.<span>..</span></p>
+          </div>
+          <button class="next-button">Próximo</button>
+        </div>
+      </div>
+      
+        
+        
+      <div class="affinity-container">
+        <div class="affinity-meter">
+          <div class="affinity-fill"></div>
+        </div>
+        <img src="imagens/catLegend.png" alt="Legenda" class="affinity-legend">
+      </div>
+      
+  </body>
+</html>
